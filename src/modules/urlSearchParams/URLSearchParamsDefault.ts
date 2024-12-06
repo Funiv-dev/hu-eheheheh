@@ -1,19 +1,20 @@
 export class URLSearchParamsDefault {
+  URLSearchParams: URLSearchParams;
 
-  constructor() { 
+  constructor() {
     this.URLSearchParams = null;
   }
 
   /**
-   * 
-   * @param {string} str 
+   *
+   * @param {string} str
    */
-  setDefault(str) {
+  setDefault(str: string) {
     this.URLSearchParams = new URLSearchParams(str);
   }
 
   printEntries() {
-    for(const [key, value] of this.URLSearchParams) {
+    for (const [key, value] of this.URLSearchParams) {
       console.log(key + ', ' + value);
     }
   }

@@ -1,4 +1,6 @@
 export class URLSearchParamsMap {
+  URLSearchParamsMap: Map<string, string>;
+  mapCount: number;
 
   constructor() {
     this.URLSearchParamsMap = new Map();
@@ -6,21 +8,21 @@ export class URLSearchParamsMap {
   }
 
   /**
-   * @param {string} key 
-   * @param {string} value 
+   * @param {string} key
+   * @param {string} value
    */
-  set(key, value) {
+  set(key: string, value: string) {
     this.URLSearchParamsMap.set(key, value);
   }
 
-  /** 
-   * @param {string} str 
+  /**
+   * @param {string} str
    */
-  setInit(str) {
-    let temp = str.split('&');
+  setInit(str: string) {
+    const temp: string[] = str.split('&');
     this.mapCount = temp.length;
 
-    for(let item of temp) {
+    for (const item of temp) {
       const [key, value] = item.split('=');
       if (!key || !value) continue;
 
@@ -29,22 +31,22 @@ export class URLSearchParamsMap {
   }
 
   /**
-   * @param {string} key 
-   * @param {string} value 
+   * @param {string} key
+   * @param {string} value
    */
-  add(key, value) {
+  add(key: string, value: string) {
     this.URLSearchParamsMap.set(key, value);
   }
 
   /**
-   * @param {void} key 
+   * @param {string} key
    */
-  get(key) {
+  get(key: string) {
     this.URLSearchParamsMap.get(key);
   }
 
   printEntries() {
-    for(const [key, value] of this.URLSearchParamsMap) {
+    for (const [key, value] of this.URLSearchParamsMap) {
       console.log(key + ', ' + value);
     }
   }

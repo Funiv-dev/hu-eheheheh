@@ -1,4 +1,4 @@
-import { URLParamSearchManager } from '../modules/urlSearchParams/URLSearchParamsManager.js';
+import { URLParamSearchManager } from '../src/modules/urlSearchParams/URLSearchParamsManager.js';
 
 let testStr1 = 'http://localhost:4001?test1=1&test2=2&test3=3&test4=4';
 let testStr2 = 'test1=1&test2=2&test3=3&test4=4';

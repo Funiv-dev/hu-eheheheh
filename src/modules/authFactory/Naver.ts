@@ -1,4 +1,4 @@
-class Naver {
+export class Naver {
   private userId: string;
   private providerName: string;
   private email: string;

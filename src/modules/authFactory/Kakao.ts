@@ -1,4 +1,4 @@
-class Kakao {
+export class Kakao {
   private userProfileId: string;
   private userProfileUsername: string;
   private userProfileProvider: string;

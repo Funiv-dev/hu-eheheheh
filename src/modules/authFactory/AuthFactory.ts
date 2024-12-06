@@ -55,3 +55,5 @@ class GoogleFactory {
     return new Google();
   }
 }
+
+export { KakaoFactory, GoogleFactory, NaverFactory, AuthFactory };

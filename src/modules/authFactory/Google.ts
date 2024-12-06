@@ -1,2 +1,1 @@
-class Google {
-}
+export class Google {}

@@ -1,11 +1,11 @@
-import { Naver } from './Naver';
-import { Kakao } from './Kakao';
-import { Google } from './Google';
+import { Naver } from '../Naver';
+import { Kakao } from '../Kakao';
+import { Google } from '../Google';
 
 class AuthFactory {
   providerName: string;
 
-  __constructor() {
+  constructor() {
     this.providerName = null; //kakao, naver, google, happe
   }
 
